@@ -34,15 +34,18 @@ const useStyles = makeStyles({
     marginBottom: "auto",
   },
   title: {
-    flexGrow: 1,
-    fontWeight: "bolder",
-    color: "blueviolet",
+    fontWeight: "bold",
+    color: "2CC2FC",
   },
   title1: {
-    flexGrow: 1,
-    fontWeight: "bolder",
+    fontSize: "10px",
+    fontWeight: "bold",
     color: "white",
   },
+  button:{
+   padding:"0px",
+  },
+
 });
 
 const Card2 = () => {
@@ -50,20 +53,20 @@ const Card2 = () => {
   return (
     <Card style={{ backgroundColor: "white", margin: "auto", marginTop: "30px" }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Button variant="outlined" color="secondary" className={classes.button}>
+        <Button  style={{color:"2CC2FC" }}   >
           <IconButton
             edge="start"
-            className={classes.menuButton}
+             
             aria-label="menu"
           >
-            <ArrowCircleUpRoundedIcon style={{ color: "blue", fontSize: "20px" }} />
+            <ArrowCircleUpRoundedIcon style={{ color: "2CC2FC", fontSize: "30px" }} />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h5" className={classes.title}>
             Toppr
           </Typography>{" "}
         </Button>
-        <Button variant="contained" color="secondary" className={classes.button}>
-          <Typography variant="h4" className={classes.title1}>
+        <Button variant="contained"   className={classes.button}>
+          <Typography variant="h5"  >
             JEE
           </Typography>
         </Button>
@@ -83,16 +86,16 @@ const Card2 = () => {
           Complete learning app{" "}
         </Typography>
         <Typography
-          style={{ color: "blueviolet", fontWeight: "bold" }}
-          gutterBottom
+          style={{ color:"2CC2FC", fontWeight:"bold" }}
+          
           variant="h5"
-          component="div"
+          
         >
           for school and exams{" "}
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <Button color="secondary" size="large">
+        <Button  style={{color:"2CC2FC"}} size="large">
           {" "}
           Explore------>
         </Button>

@@ -34,6 +34,8 @@ const useStyles = makeStyles( {
     flexGrow: 1,
   },
   typo1: {
+    maxWidth:"80%",
+    margin:"3vw",
     fontWeight: 'bold',
     color: 'grey',
     fontSize: '4vw',
@@ -44,7 +46,8 @@ const useStyles = makeStyles( {
     },
   },
   typo2: {
-    '@media (max-width: 600px)': {
+     maxWidth:"40%",
+     '@media (max-width: 800px)': {
       display: "none",
     },
   },
@@ -77,7 +80,7 @@ export default function Block5() {
       </div>
       < Grid4 />
       <div style={{margin:"40px"}}>
-      <Button variant="contained"color="secondary" style={{borderRadius:"15px", fontWeight:"bold"}}  >
+      <Button variant="contained"  style={{borderRadius:"15px", fontWeight:"bold"}}  >
         <Typography variant="h5"> GET STARTED-----></Typography>
       </Button>
       </div>

@@ -16,33 +16,31 @@ import AppleIcon from '@mui/icons-material/Apple';
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: '#212121',
-    padding: "10px",
-    maxWidth: '1200px', // Set the maximum width to 1200px
-    margin: '0 auto', // Center the container horizontally
+    backgroundColor: '#2E2D3A',
   },
   paper: {
     margin: '5%', // Set the margin to 5% on all sides
     padding: "10px",
-    backgroundColor: '#37474f',
+    backgroundColor: '#393747',
     maxWidth: '90%', // Set the maximum width to 90% of the available space
     margin: '0 auto', // Center the container horizontally
   },
   list: {
     padding: "10px",
-    backgroundColor: '#37474f',
+    backgroundColor: '#393747',
     maxWidth: '90%', // Set the maximum width to 90% of the available space
     margin: '0 auto', // Center the container horizontally
   },
   copyright: {
     marginTop: '1.5625vw',
-    marginLeft: '5%', // Set the margin to 5% on the left side
+    marginLeft: '15.59375vw',
+    // Set the margin to 5% on the left side
   },
   socialIcons: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: '33.59375vw',
+    marginLeft: '25.59375vw',
     marginTop: "10px",
   },
   flag: {
@@ -65,18 +63,18 @@ const Footer = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={4}>
           <Paper className={classes.paper}>
-            <Typography variant="h3" style={{ fontWeight: "bold" }}>Card 1</Typography>
+            <Typography variant="h3" style={{fontSize:"60px" ,color:"#F78C89",fontWeight: "bold"  }}>5-12 Classes</Typography>
           </Paper>
         </Grid>
         
         <Grid item xs={12} sm={4}>
           <Paper className={classes.paper}>
-            <Typography variant="h3" style={{ fontWeight: "bold" }}>Card 3</Typography>
+            <Typography variant="h3" style={{ fontSize:"60px" ,color:"#FFD885",fontWeight: "bold" }}>22 Boards</Typography>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={4}>
           <Paper className={classes.paper}>
-            <Typography variant="h3" style={{ fontWeight: "bold" }}>Card 3</Typography>
+            <Typography variant="h3" style={{fontSize:"60px" ,color:"#A0E8BD",fontWeight: "bold" }}>58 Exams</Typography>
           </Paper>
         </Grid>
       </Grid>
@@ -84,50 +82,52 @@ const Footer = () => {
 
         <Grid item xs={12} sm={3}>
           <Paper className={classes.list}>
-            <Typography variant="h6">List 1</Typography>
+            <Typography variant="h6">COMPANY</Typography>
             <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
+              <li>About Us</li>
+              <li>Brand Resources</li>
+              <li>Jobs</li>
+              <li>Press</li>
+              <li>Fellowship</li>
+              <li>Student Reviews</li>
             </ul>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
           <Paper className={classes.list}>
-            <Typography variant="h6">List 2</Typography>
+            <Typography variant="h6"> OTHER </Typography>
 
             <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
+              <li>Customer Stories</li>
+              <li>Guides</li>
+              <li>Parent Reviews</li>
+              <li>Ask</li>
+              <li>Blog</li>
+              <li>Teacher Reviews</li>
             </ul>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
           <Paper className={classes.list}>
-            <Typography variant="h6">List 3</Typography>
+            <Typography variant="h6">FEATURES</Typography>
             <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
+              <li>Video Classes</li>
+              <li>All India Test Series</li>
+              <li>Student Stories</li>
+              <li>Student Stories</li>
+              <li>Student Stories</li>
             </ul>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
-          <Paper className={classes.list}>
-            <Typography variant="h6">List 4</Typography>
+        <Paper className={classes.list}>
+            <Typography variant="h6">IMPORTANT</Typography>
             <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-              <li>Item 5</li>
+              <li>LIVE Classes</li>
+              <li>All India Test Series</li>
+              <li>Student Stories</li>
+              <li>Student Stories</li>
+              <li>Student Stories</li>
             </ul>
           </Paper>
         </Grid>
@@ -160,7 +160,7 @@ const Footer = () => {
       </div>
       
       </Grid>
-      <Grid item lg={6}>
+      <Grid item lg={4}>
       <div className={classes.socialIcons}>
         <Link href="#">
           <FacebookIcon  style={{margin:"10px"}}/>

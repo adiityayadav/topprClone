@@ -16,21 +16,25 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 const useStyles = makeStyles({
   cardContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
     marginRight: '1.5625vw',
   },
   cardActions: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100%',
     justifyContent: 'space-between',
-    marginLeft: "7.8125vw"
   },
   paper: {
     display: 'flex',
-    alignItems: 'center',
-    backgroundColor: 'white',
-    padding: '0.390625vw',
-    borderRadius: '0.390625vw',
-    marginLeft: "3vw",
-    marginTop: '1.5625vw',
-     
+    justifyContent: 'center',
+    alignItems: 'center',   
   },
   title: {
     flexGrow: 1,
@@ -46,7 +50,8 @@ const useStyles = makeStyles({
  
   },
   button:{
-    marginLeft:"10px"
+    marginLeft:"10px",
+    backgroundColor:"#2CB4FC" 
 
   },
 });
@@ -57,23 +62,23 @@ export default function Card1() {
   return (
   <Paper style={{ margin: "3.125vw", backgroundColor: "white" }}>
   <div className={classes.paper}>
-    <Button variant="outlined" color="secondary" className={classes.button}>
+    <Button   color="secondary" className={classes.button}>
       <IconButton edge="start" className={classes.menuButton} aria-label="menu">
-        <ArrowCircleUpRoundedIcon sx={{ fontSize: { xs: 25, md: 35 }, color: "blue" }} />
+        <ArrowCircleUpRoundedIcon sx={{ fontSize: { xs: 25, md: 35 }, color: "#259FFB" }} />
       </IconButton>
       <Typography
         variant="h6"
         className={classes.title}
-        sx={{ fontSize: { xs: 20, sm: 25, md: 30 }, fontWeight: "bolder", color: "blueviolet" }}
+        sx={{ fontSize: { xs: 17, sm: 22, md: 26 }, fontWeight: "bolder", color: "black" }}
       >
         Toppr
       </Typography>
     </Button>
-    <Button variant="contained" color="secondary" className={classes.button}>
+    <Button variant="contained"  style={{backgroundColor:"#2CB4FC" }} className={classes.button}>
       <Typography
         variant="h4"
         className={classes.title1}
-        sx={{ fontSize: { xs: 25, sm: 30, md: 35 }, fontWeight: "bolder", color: "white" }}
+        sx={{ fontSize: {   xs: 17, sm: 22, md: 26 }, fontWeight: "bolder" }}
       >
         learningApp
       </Typography>
@@ -82,10 +87,7 @@ export default function Card1() {
 
   <Card
     sx={{
-      backgroundColor: "white",
-      margin: { xs: "30px", sm: "50px", md: "80px" },
-      marginTop: "0px",
-    }}
+      backgroundColor: "white" }}
   >
     <CardMedia
       sx={{ height: 200 }}
@@ -103,21 +105,21 @@ export default function Card1() {
         Complete learning app
       </Typography>
       <Typography
-        style={{ color: "blueviolet", fontWeight: "bold" }}
+        style={{ color:"#2CC2FC" , fontWeight: "bold" }}
         gutterBottom
         variant="h5"
         component="div"
-        sx={{ fontSize: { xs: 25, sm: 35, md: 40 } }}
+        sx={{ fontSize: { xs: 25, sm: 35, md: 40 }  }}
       >
         for school and exams
       </Typography>
-      <Typography variant="body1" color="text.secondary" sx={{ fontSize: { xs: 15, sm: 20, md: 25 } }}>
+      <Typography variant="body1"  sx={{ fontSize: { xs: 12, sm: 17, md: 21 }, color:"gray" }}>
         Class 5-12
       </Typography>
     </CardContent>
 
     <CardActions className={classes.cardActions}>
-      <Button color="secondary" size="">
+      <Button   style={{color:"#2CC2FC"}} size="">
         Explore------>
       </Button>
     </CardActions>

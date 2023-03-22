@@ -15,9 +15,9 @@ function Block3() {
 
   return (
     <>
-      <Typography variant="h2" style={{ fontWeight: 'bold', margin:"3vw" }}>
-      Our plans for competitive exams
-      </Typography>
+    <Typography variant="h2" style={{ fontWeight: 'bold', margin:"3vw", textAlign: "center" }}>
+Our plans for competitive exams
+</Typography>
 
 
       <Grid2 /> 

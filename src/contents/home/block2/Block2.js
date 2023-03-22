@@ -32,11 +32,13 @@ const useStyles = makeStyles( {
     backgroundColor: 'black',
     marginLeft: '10px',
     marginRight: '10px',
-    padding: '5px',
+    paddingLeft: '20px',
+    paddingRight: '20px',
+
   },
   buttonGroup: {
     display: "flex",
-    marginLeft: " 70.3125vw",
+    marginLeft: " 65.3125vw",
     "@media (max-width: 480px)": {
       margin: '20px'
    },
@@ -57,26 +59,27 @@ export default function Block2() {
         <Toolbar style={{ backgroundColor: 'white' }}>
           <Paper className={classes.paper}>
             <IconButton edge="start" className={classes.menuButton} aria-label="menu">
-              <ArrowCircleUpRoundedIcon style={{color:"blue"}} />
+              <ArrowCircleUpRoundedIcon style={{color:"#259FFB", fontWeight:"40px"}} />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
               Toppr
             </Typography>
           </Paper>
           <div className={classes.buttonGroup}>
-          <Typography className={classes.Button} variant="h6">Login</Typography>
-          <Typography className={classes.Button} variant="h6">SignUp</Typography>
+          <Typography className={classes.Button} variant="h6">LOGIN</Typography>
+          <Typography className={classes.Button} variant="h6">SIGNUP</Typography>
           </div>
         </Toolbar>
         
         <div style={{margin:"3vw"}}>
-        <Typography style={{  fontWeight: "bold", }} variant="h2" >
-        Better Learning. Better Results.</Typography>
-  
-        <Typography style={{color: "blueviolet", fontWeight: "bold"}} variant="h2"  >
-          One platform for all your learning needs
-        </Typography>
-        </div>
+  <Typography style={{fontWeight: "bold", textAlign: "center"}} variant="h2" >
+    Better Learning. Better Results.
+  </Typography>
+
+  <Typography style={{color: "#259FFB", fontWeight: "bold", textAlign: "center"}} variant="h2"  >
+    One platform for all your learning needs
+  </Typography>
+</div>
        < Grid1 />
       </div>
     )

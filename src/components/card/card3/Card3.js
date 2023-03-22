@@ -10,10 +10,10 @@ export default function Card3() {
   const theme = useTheme();
 
   return (
-    <Card sx={{ display: 'flex' , margin: "0.78125vw", marginLeft:"15px"}}>
+    <Card sx={{ display: 'flex' , margin: "0.6125vw", marginLeft:"15px"}}>
       <CardMedia
         component="img"
-        sx={{ width: 120 }}
+        sx={{ width: 90}}
         image="https://static-cf.toppr.com/marketing/6c448a3/images/home/Award.svg"
         alt="Live from space album cover"
       />

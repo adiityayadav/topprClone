@@ -40,6 +40,7 @@ const useStyles = makeStyles( {
         flexDirection: 'column',
         alignItems: 'flex-start',
         width: '60%',
+        margin:"5vw",
         '@media (max-width: 960px)': {
             width: "100%",
         },
@@ -62,8 +63,8 @@ const useStyles = makeStyles( {
         marginLeft: "3.125vw",
     },
     theading: {
-        color: "grey",
-        fontWeight: "bold",
+        color: "white",
+        fontWeight: "bolder",
         '@media (max-width: 960px)': {
             variant: "h4",
         },
@@ -102,7 +103,7 @@ export default function Block7() {
                         <Box display="flex" justifyContent="space-between">
                             <Button variant="contained" style={{ backgroundColor: "black", margin: "50px" }}>
                                 <Typography style={{ color: "white" }} variant="h6">
-                                BOOK DEMO---
+                                BOOK DEMO--->
                                 </Typography>{" "}
                             </Button>
                             <Button variant="contained" style={{ backgroundColor: "black", margin: "50px" }}>

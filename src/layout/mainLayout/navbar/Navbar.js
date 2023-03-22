@@ -14,13 +14,13 @@ import ListItemText from '@material-ui/core/ListItemText';
 const useStyles = makeStyles({
    
   menuButton: {
-    color: "blue",
+    color: "#259FFB",
     marginLeft: "15px",
   },
   menuButton1: {
-    color: "grey",
+    color: "#397CB7",
     marginLeft: "40px",
-
+    fontSize: "18px",
   },
   menuButton2: {
     color: "grey",
@@ -48,21 +48,21 @@ export default function Navbar() {
 
   return (
     <div >
-      <AppBar position="static" style={{ background: 'white' }}>
+      <AppBar position="static" style={{ background:'white' }}>
         <Toolbar>
           {isSmallScreen ? (<>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <HomeIcon style={{ fontSize: "35px" }} />
             </IconButton>
             <IconButton edge="start" className={classes.menuButton2} color="inherit" aria-label="menu" onClick={toggleDrawer}>
-              <MenuIcon style={{ fontSize: "35px" }} />
+              <MenuIcon style={{ fontSize:"35px" }} />
             </IconButton></>
           ) : ( <>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <HomeIcon style={{ fontSize: "35px" }} />
             </IconButton>
             <Typography variant="h6" className={classes.menuButton1}>
-              LEARNING APP
+             LEARNINGAPP
             </Typography>
             <Typography variant="h6" className={classes.menuButton1}>
               CODER

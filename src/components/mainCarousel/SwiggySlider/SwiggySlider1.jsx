@@ -6,6 +6,7 @@ import { styled } from "@mui/styles";
 import SliderItem from "./sliderItem/SliderItem";
 
 import {
+  ArrowCircleLeftOutlined,
   ArrowCircleRightOutlined,
 } from "@mui/icons-material";
 import Button from "@mui/material/Button";
@@ -24,22 +25,23 @@ const SliderContainer = styled("div")({
   },
 });
 const SliderInnerContainer = styled("div")({
-  width:"93.75vw",
+  width:"88.75vw",
   display: "flex",
+  marginLeft:"3.90625vw",
   justifyContent: "space-between",
   flexDirection: "column",
   boxShadow: "0 1px 5px rgba(104, 104, 104, 0.8)",
 });
 
-// const PreviousBtn = (props) =>{
-//   const {className,onClick} = props;
+const PreviousBtn = (props) =>{
+  const {className,onClick} = props;
 
-//    return (
-//          <div className={className}   onClick={onClick}>
-//           <ArrowCircleLeftOutlined style={{color:'black',zIndex:'100',fontSize:'3rem' }} />
-//          </div>
-//    )
-// }
+   return (
+         <div className={className} style={{marginRight:'5vw'}}  onClick={onClick}>
+          <ArrowCircleLeftOutlined style={{color:'black',zIndex:'100',fontSize:'3rem'}} />
+         </div>
+   )
+}
 
 const NextBtn = (props) => {
   const { className, onClick } = props;
@@ -61,10 +63,10 @@ const SwiggySlider1 = (props) => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     initialSlide: 0,
-    // prevArrow:<PreviousBtn />,
+    prevArrow:<PreviousBtn/>,
     nextArrow: <NextBtn />,
     responsive: [
       {
@@ -72,7 +74,7 @@ const SwiggySlider1 = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 300,
+          speed: 1200,
           arrows: true,
         },
       },
@@ -81,7 +83,7 @@ const SwiggySlider1 = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 300,
+          speed: 1200,
           arrows: false,
           autoplay: true,
         },
@@ -91,7 +93,7 @@ const SwiggySlider1 = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 300,
+          speed: 1200,
           arrows: false,
           autoplay: true,
         },
@@ -101,7 +103,7 @@ const SwiggySlider1 = (props) => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          speed: 300,
+          speed: 1200,
           arrows: false,
           autoplay: true,
         },
@@ -111,7 +113,7 @@ const SwiggySlider1 = (props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          speed: 300,
+          speed: 1200,
           arrows: false,
           autoplay: true,
           dots: true,
@@ -132,9 +134,8 @@ const SwiggySlider1 = (props) => {
       </SliderContainer>
       <Button
         variant="contained"
-        color="secondary"
-        style={{ borderRadius: "15px", fontWeight: "bold" , display:"flex", justifyContent: "center"}} >
-        <Typography variant="h5"> GET STARTED---- </Typography>
+        style={{ borderRadius: "15px",margin:"5vw", fontWeight: "bold" , display:"flex", justifyContent: "center"}} >
+        <Typography variant="h5"> GET STARTED----> </Typography>
       </Button>
     </>
   );

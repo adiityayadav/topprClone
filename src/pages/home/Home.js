@@ -14,7 +14,7 @@ import Navbar from '../../layout/mainLayout/navbar/Navbar'
 const Home = () => {
     
     return (
-        <div style={{overflowX:"hidden"}}>
+        <div style={{overflowX:"hidden", overflowY:"hidden"}}>
             {/* Header */}
              <Navbar />
           
