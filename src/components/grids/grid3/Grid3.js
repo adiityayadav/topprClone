@@ -4,7 +4,7 @@ import Card3 from '../../card/card3/Card3'
 
 const Grid3 = () => {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={3}>
     <Grid item  lg={4}>
        <Card3 />
     </Grid>

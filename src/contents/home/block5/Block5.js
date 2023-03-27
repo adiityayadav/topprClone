@@ -1,9 +1,9 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import Typography from "@material-ui/core/Typography";
 import Button  from '@mui/material/Button';
 import Video from "./Video";
 import Grid4 from "../../../components/grids/grid4/Grid4";
+import { Typography } from "@mui/material";
 
 
 const useStyles = makeStyles( {
@@ -56,14 +56,15 @@ const useStyles = makeStyles( {
 export default function Block5() {
   const classes = useStyles();
 
-  return (
+  return (<>
     <div className={classes.root}>
       <div className={classes.flexBox}>
-        <div>
-          <Typography className={classes.typo1}  variant="h2">
+     
+        <Typography   sx={{ fontWeight: 'bold', margin:"3vw", textAlign: "center",fontSize: { xs: 25, sm: 32, md: 38} , color:"gray"}}>
+
             Built for all boards and exams with widest syllabus coverage
           </Typography>
-        </div>
+       
         <div  className={classes.typo2}>
           <Typography style={{fontWeight:"bold"}} variant="h5">
             Your learning needs are unique and we do everything to ensure that
@@ -78,15 +79,17 @@ export default function Block5() {
           </Typography>
         </div>
       </div>
-      < Grid4 />
-      <div style={{margin:"40px"}}>
-      <Button variant="contained"  style={{borderRadius:"15px", fontWeight:"bold"}}  >
-        <Typography variant="h5"> GET STARTED-----></Typography>
-      </Button>
       </div>
+      <div style={{margin:"3px"}}>
+      < Grid4 />
       
-      <Video />
+      </div>
+     
       
-    </div>
+  
+   
+   
+   <Video />
+   </>
   );
 }

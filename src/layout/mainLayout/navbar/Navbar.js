@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -10,22 +9,22 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import { Typography } from '@mui/material';
+import UserLocation from '../../../adapters/UserLocation';
+import { Box } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
    
   menuButton: {
-    color: "#259FFB",
-    marginLeft: "15px",
+    
   },
   menuButton1: {
-    color: "#397CB7",
-    marginLeft: "40px",
-    fontSize: "18px",
+    
   },
   menuButton2: {
     color: "grey",
-    marginLeft: "40vw",
-
+    marginLeft: "45vw",
   },
   drawer: {
     width: 250,
@@ -42,40 +41,44 @@ export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
   const isSmallScreen = window.matchMedia('(max-width: 600px)').matches;
 
-  const toggleDrawer = () => {
+  const toggleDrawer =()=> {
     setDrawerOpen(!drawerOpen);
   };
-
   return (
     <div >
       <AppBar position="static" style={{ background:'white' }}>
         <Toolbar>
-          {isSmallScreen ? (<>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          {isSmallScreen ? ( <>
+            {/* <Link to="/"> */}
+            <IconButton edge="start" style={{}} color="inherit" aria-label="menu">
               <HomeIcon style={{ fontSize: "35px" }} />
             </IconButton>
+            {/* </Link> */}
+            <UserLocation />
             <IconButton edge="start" className={classes.menuButton2} color="inherit" aria-label="menu" onClick={toggleDrawer}>
               <MenuIcon style={{ fontSize:"35px" }} />
             </IconButton></>
-          ) : ( <>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          ) : (<> 
+            <IconButton edge="start" style={{color: "#259FFB", marginLeft: "15px"}} color="inherit" aria-label="menu">
               <HomeIcon style={{ fontSize: "35px" }} />
             </IconButton>
-            <Typography variant="h6" className={classes.menuButton1}>
-             LEARNINGAPP
+            
+            {/* <Link to="/guides"> */}
+              <Typography variant="h6" sx={{color: "#397CB7",marginLeft: "40px",fontSize: "18px"}}  >GUIDES </Typography>
+              {/* </Link>    */}
+           
+            <Typography variant="h6" sx={{color: "#397CB7",marginLeft: "40px",fontSize: "18px"}} >
+            CODER
             </Typography>
-            <Typography variant="h6" className={classes.menuButton1}>
-              CODER
+            <Typography variant="h6" sx={{color: "#397CB7",marginLeft: "40px",fontSize: "18px"}} >
+            SCHOOLOS
             </Typography>
-            <Typography variant="h6" className={classes.menuButton1}>
-              SCHOOL OS
+            <Typography variant="h6" sx={{color: "#397CB7",marginLeft: "40px",fontSize: "18px"}} >
+            STAR
             </Typography>
-            <Typography variant="h6" className={classes.menuButton1}>
-              STAR
-            </Typography>
+            <Box style={{color: "#397CB7" , display:"flex", alignItems:"flex-end" ,fontSize: "18px", marginLeft:"40vw" }} >
+            <UserLocation />    </Box>
           </>)}
-
-
           <Drawer anchor="top" open={drawerOpen} onClose={toggleDrawer}>
             <div className={classes.drawer} >
               <List>

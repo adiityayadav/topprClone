@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Block1 from '../../contents/home/block1/Block1'
 import Block2 from '../../contents/home/block2/Block2'
 import Block3 from '../../contents/home/block3/Block3'
 import Block4 from '../../contents/home/block4/Block4'

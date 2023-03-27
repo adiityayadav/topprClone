@@ -2,6 +2,7 @@ import React from 'react'
 import Home from '../src/pages/home/Home'
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import Guides from './pages/home/Guides';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
     <div>
       <Home />
+      {/* <Guides exact path='/guides' /> */}
     </div>
     </ThemeProvider>
 

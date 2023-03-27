@@ -10,7 +10,8 @@ import {
   ArrowCircleRightOutlined,
 } from "@mui/icons-material";
 import Button from "@mui/material/Button";
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "@mui/material";
+// import Typography from "@material-ui/core/Typography";
 const SliderContainer = styled("div")({
   height: "100%",
   // margin:"2% 0.3%",
@@ -37,8 +38,8 @@ const PreviousBtn = (props) =>{
   const {className,onClick} = props;
 
    return (
-         <div className={className} style={{marginRight:'5vw'}}  onClick={onClick}>
-          <ArrowCircleLeftOutlined style={{color:'black',zIndex:'100',fontSize:'3rem'}} />
+         <div className={className} style={{}}  onClick={onClick} >
+          <ArrowCircleLeftOutlined sx={{color:'black',fontSize:'3rem',marginLeft:'-25px'}} />
          </div>
    )
 }
@@ -135,7 +136,7 @@ const SwiggySlider1 = (props) => {
       <Button
         variant="contained"
         style={{ borderRadius: "15px",margin:"5vw", fontWeight: "bold" , display:"flex", justifyContent: "center"}} >
-        <Typography variant="h5"> GET STARTED----> </Typography>
+        <Typography variant="h5"  > GET STARTED----&gt; </Typography>
       </Button>
     </>
   );

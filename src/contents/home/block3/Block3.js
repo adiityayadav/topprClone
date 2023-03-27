@@ -1,7 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 import Grid2 from '../../../components/grids/grid2/Grid2';
+import { Typography } from '@mui/material';
 
 const useStyles = makeStyles({
   card: {
@@ -15,7 +16,7 @@ function Block3() {
 
   return (
     <>
-    <Typography variant="h2" style={{ fontWeight: 'bold', margin:"3vw", textAlign: "center" }}>
+     <Typography   sx={{ fontWeight: 'bold', margin:"3vw", textAlign: "center",fontSize: { xs: 25, sm: 32, md: 38} , color:"gray"}}>
 Our plans for competitive exams
 </Typography>
 

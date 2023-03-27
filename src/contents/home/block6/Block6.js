@@ -1,13 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import Typography from '@material-ui/core/Typography';
 import SwiggySlider1 from '../../../components/mainCarousel/SwiggySlider/SwiggySlider1';
+import { Typography } from '@mui/material';
 
 
 const useStyles = makeStyles( {
-  root: {
    
-  },
+ 
   heading: {
     display:"flex",
     justifyContent: "center",
@@ -78,11 +77,12 @@ export default function DifferentShapeComponent() {
 
   return (
     
-  <div className={classes.root}>
-      <Typography variant="h1" className={classes.heading}>
+  <div className={classes.root} >
+            <Typography   sx={{ fontWeight: 'bold', margin:"3vw", textAlign: "center",fontSize: { xs: 25, sm: 32, md: 38} , color:"gray"}}>
+
       Students, Parents & Experts Love Us!
       </Typography>
-    <div style={{ width:'2200px'}}>
+    <div >
        <SwiggySlider1 sliderData={sliderData} />
     </div>
   </div>

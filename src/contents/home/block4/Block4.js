@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import Typography from '@material-ui/core/Typography';
+import { Typography } from '@mui/material';
 import Grid3 from '../../../components/grids/grid3/Grid3';
 
 const useStyles = makeStyles({
@@ -18,15 +18,14 @@ const Block4 = () => {
     const classes = useStyles();
 
     return (
-      <div className={classes.root}>
-        <Typography variant="h4" className={classes.heading}>
-        India's most awarded edtech platform
-  
-        </Typography>
-
-        <Grid3 />
-        
-      </div>
+      <>
+       <Typography   sx={{ fontWeight: 'bold', margin:"3vw", textAlign: "center",fontSize: { xs: 25, sm: 32, md: 38} , color:"gray"}}>
+       India's most awarded edtech platform
+</Typography>
+ 
+        <Grid3 /> 
+      </>
+   
     );
   }
   

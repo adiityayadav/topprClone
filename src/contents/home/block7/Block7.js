@@ -4,6 +4,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@mui/material/Typography";
 import Grid5 from "../../../components/grids/grid5/Grid5";
 import { Button } from "@material-ui/core";
+import { Diversity2TwoTone } from "@mui/icons-material";
 const useStyles = makeStyles( {
     container: {
         display: "flex",
@@ -69,6 +70,12 @@ const useStyles = makeStyles( {
             variant: "h4",
         },
     },
+    button:{
+        display:"flex",
+        "@media (max-width: 480px)": {
+            display:"inline",
+          },
+    },
 });
 
 export default function Block7() {
@@ -79,8 +86,8 @@ export default function Block7() {
             <Box>
                 <Box className={classes.container}>
                     <Box className={classes.leftBox}>
-                        <Typography className={classes.theading} variant="h2">
-                            {" "}
+                    <Typography   sx={{ fontWeight: 'bold', margin:"3vw", textAlign: "center",fontSize: { xs: 25, sm: 32, md: 38} , color:"gray"}}>
+
                             Toppr app is available on all platforms
                         </Typography>
                         <Grid5 />
@@ -100,18 +107,18 @@ export default function Block7() {
                         <Typography variant="body1" style={{ margin: "2.34375vw" }} className={classes.paragraph1}>
                             Have any questions? An experienced Toppr Agent will be able to answer any questions you have and discuss academic goals as well as the unique needs of the learner.
                         </Typography>
-                        <Box display="flex" justifyContent="space-between">
-                            <Button variant="contained" style={{ backgroundColor: "black", margin: "50px" }}>
+                        <div className={classes.button}>
+                            <Button variant="contained" style={{ backgroundColor: "black", margin: "4vw" }}>
                                 <Typography style={{ color: "white" }} variant="h6">
                                 BOOK DEMO--->
                                 </Typography>{" "}
                             </Button>
-                            <Button variant="contained" style={{ backgroundColor: "black", margin: "50px" }}>
+                            <Button variant="contained" style={{ backgroundColor: "black", margin: "4vw" }}>
                                 <Typography style={{ color: "white" }} variant="h6">
                                     SUBSCRIBE NOW
                                 </Typography>{" "}
                             </Button>
-                        </Box>
+                        </div>
                     </Box>
                     <Box className={classes.rightContainer1}>
                         <img src="https://static-cf.toppr.com/marketing/6c448a3/images/home/boy-with-tablet.png" alt="Placeholder" style={{ height: "450px", width: "450px" }} />

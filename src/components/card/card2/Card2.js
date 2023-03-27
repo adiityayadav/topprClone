@@ -51,7 +51,9 @@ const useStyles = makeStyles({
 const Card2 = () => {
   const classes = useStyles();
   return (
-    <Card style={{ backgroundColor: "white", margin: "auto", marginTop: "30px" }}>
+    <Card style={{ backgroundColor: "white", margin: "auto", marginTop: "30px" ,"@media (max-width: 480px)": {
+      margin:"20px",
+    }, }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Button  style={{color:"2CC2FC" }}   >
           <IconButton

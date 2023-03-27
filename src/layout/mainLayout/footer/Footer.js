@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import { Grid, Paper, Typography, Link, Icon, Button } from '@material-ui/core';
+import { Grid, Paper,  Link, Icon, Button } from '@material-ui/core';
+
 import {
   Facebook as FacebookIcon,
   Twitter as TwitterIcon,
@@ -12,6 +13,7 @@ import {
 } from '@material-ui/icons';
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import AppleIcon from '@mui/icons-material/Apple';
+import { Typography } from '@mui/material';
 
 
 const useStyles = makeStyles({
@@ -60,21 +62,21 @@ const Footer = () => {
 
   return (
     <footer className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={4}>
+      <Grid container style={{marginBottom:"10vw"}} spacing={2}>
+        <Grid item xs={4} sm={4}>
           <Paper className={classes.paper}>
-            <Typography variant="h3" style={{fontSize:"60px" ,color:"#F78C89",fontWeight: "bold"  }}>5-12 Classes</Typography>
+            <Typography variant="h3" sx={{fontSize:{ xs: "17px", md: "50px"},color:"#F78C89",fontWeight: "bold" }}>5-12 Classes</Typography>
           </Paper>
         </Grid>
         
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={4} sm={4}>
           <Paper className={classes.paper}>
-            <Typography variant="h3" style={{ fontSize:"60px" ,color:"#FFD885",fontWeight: "bold" }}>22 Boards</Typography>
+            <Typography variant="h3"sx={{fontSize:{ xs: "17px", md: "50px"} ,color:"#FFD885",fontWeight: "bold" }}>22 Boards</Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={4} sm={4}>
           <Paper className={classes.paper}>
-            <Typography variant="h3" style={{fontSize:"60px" ,color:"#A0E8BD",fontWeight: "bold" }}>58 Exams</Typography>
+            <Typography variant="h3"sx={{fontSize:{ xs: "17px", md: "50px"} ,color:"#A0E8BD",fontWeight: "bold" }}>58 Exams</Typography>
           </Paper>
         </Grid>
       </Grid>

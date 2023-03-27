@@ -11,6 +11,8 @@ const SliderContainer = styled("div")({
 });
 const ImageContainer = styled("div")({
   display: "flex",
+  margin:"6px",
+  padding:'2px',
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
@@ -45,7 +47,7 @@ const SliderItem = ({ posterLinks }) => {
         <Typography style={{ margin: "0.78125vw  " }} variant="body1">
           {posterLinks.description}{" "}
         </Typography>
-        <div style={{ display: "flex", direction: "row" }}>
+        <div style={{ display: "flex", flexDirection:"row",justifyContent:"space-around",width:"100%",alignItems:"center",paddingBottom:"10px"}}>
           <Avatar
             style={{ marginRight: "5%" }}
             alt="Profile Picture"

@@ -122,7 +122,7 @@ const Grid5 = () => {
         <Button variant="contained" style={{ backgroundColor: "black" }}>
           <PlayArrowIcon style={{ color: "white" }} />
           <Typography style={{ color: "white" }} variant="h6">
-            Google Play
+            GooglePlay
           </Typography>{" "}
         </Button>{" "}
       </div>

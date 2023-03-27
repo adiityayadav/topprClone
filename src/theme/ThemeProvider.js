@@ -6,7 +6,7 @@ import { StylesProvider } from '@mui/styles';
 export const ThemeContext = createContext((_themeName) => {});
 
 const ThemeProviderWrapper = (props) => {
-  const [themeName, _setThemeName] = useState('PureLightTheme');
+const [themeName, _setThemeName] = useState('PureLightTheme');
 
   useEffect(() => {
     const curThemeName =
