@@ -19,6 +19,7 @@ import { Typography } from '@mui/material';
 const useStyles = makeStyles({
   root: {
     backgroundColor: '#2E2D3A',
+    width:"100%",
   },
   paper: {
     margin: '5%', // Set the margin to 5% on all sides
@@ -30,6 +31,7 @@ const useStyles = makeStyles({
   list: {
     padding: "10px",
     backgroundColor: '#393747',
+    color:"white",
     maxWidth: '90%', // Set the maximum width to 90% of the available space
     margin: '0 auto', // Center the container horizontally
   },

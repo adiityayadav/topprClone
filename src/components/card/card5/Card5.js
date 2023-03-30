@@ -1,47 +1,43 @@
 import React from 'react';
-import { Paper, Avatar, Typography } from '@material-ui/core';
+import { Card, CardContent } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { Paper, Avatar } from '@material-ui/core';
+import { Typography } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 300,
+    maxHeight: 200,
+    backgroundColor: 'white',
+    color: 'black',
     display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
-    padding: theme.spacing(2),
   },
   avatar: {
-    width: theme.spacing(7),
-    height: theme.spacing(7),
-    marginRight: theme.spacing(2),
+    marginTop: "20px",
+    height: "120px",
+    width: "120px",
   },
-  heading: {
-    fontWeight: 'bold',
-  },
-}));
+   
+});
 
-const data = [
-  { name: 'John Doe', avatar: 'https://example.com/avatar1.jpg' },
-  { name: 'Jane Smith', avatar: 'https://example.com/avatar2.jpg' },
-  { name: 'Bob Johnson', avatar: 'https://example.com/avatar3.jpg' },
-];
-
-const Card5 = () => {
+const  Card5 = ({ title, imageUrl }) => {
   const classes = useStyles();
 
   return (
-    <>
-      {data.map((item) => (
-        <Paper className={classes.paper} key={item.name}>
-          <Avatar className={classes.avatar} alt={item.name} src={item.avatar} />
-          <div>
-            <Typography variant="h6" className={classes.heading}>
-              {item.name}
-            </Typography>
-            <Typography variant="body1">Lorem ipsum dolor sit amet</Typography>
-          </div>
+   
+       
+        <Paper className={classes.root}>
+          <Avatar className={classes.avatar} src={imageUrl} alt="" />
+          <Typography variant="h6" sx={{ fontSize: { xs: 8, sm: 12 },
+    fontWeight: 'bold' }}>
+            {title}
+          </Typography>
         </Paper>
-      ))}
-    </>
+     
+    
   );
 };
 
-export default Card5;
+export default  Card5;
